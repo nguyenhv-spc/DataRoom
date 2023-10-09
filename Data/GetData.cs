@@ -210,7 +210,7 @@ namespace Data
                 else
                 {
                     CeilingFinish.Add(item.CeilingFinish);
-                    MatertialsofCeiling.SurfaceMaterial = item.CeilingFinish;
+                    MatertialsofCeiling.CeilingFinish = item.CeilingFinish;
                     MatertialsofCeiling.Area = item.Area;
                     MatertialsofCeilings.Add(MatertialsofCeiling);
                 }

@@ -32,5 +32,26 @@ namespace Data
 
             
         }
+        public void Run1()
+        {
+            // Get data
+            GetData CreateData = new GetData();
+            CreateData.FixData();
+
+            using (SaveFileDialog SaveFD = new SaveFileDialog())
+            {
+                SaveFD.Title = "Lưu file Data";
+                SaveFD.Filter = "Excel Files (*xlsx)|*.xlsx";
+                SaveFD.RestoreDirectory = true;
+                if (SaveFD.ShowDialog() == DialogResult.OK)
+                {
+                    ExportUsingOpenXml Excel = new ExportUsingOpenXml();
+                    Excel.ExportDataRoom(Module.DataRooms, SaveFD.FileName);
+                }
+
+            }
+
+
+        }
     }
 }

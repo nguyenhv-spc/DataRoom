@@ -290,15 +290,15 @@ namespace Data
                 FurnitureSheet.Cells[i + 2, 1] = item.RoomLevel;
                 FurnitureSheet.Cells[i + 2, 2] = item.RoomNumber;
                 FurnitureSheet.Cells[i + 2, 3] = item.RoomName;
-                foreach (var Ceiling in item.FurnitureSet)
+                foreach (var Furniture in item.FurnitureSet)
                 {
-                    FurnitureSheet.Cells[i + 2, 4] = Ceiling.Category;
-                    FurnitureSheet.Cells[i + 2, 5] = Ceiling.FurnitureName;
+                    FurnitureSheet.Cells[i + 2, 4] = Furniture.Category;
+                    FurnitureSheet.Cells[i + 2, 5] = Furniture.FurnitureName;
                     FurnitureSheet.Cells[i + 2, 6] = "";
                     FurnitureSheet.Cells[i + 2, 7] = "";
-                    FurnitureSheet.Cells[i + 2, 8] = Ceiling.Count;
-                    FurnitureSheet.Cells[i + 2, 9] = Ceiling.ID;
-                    FurnitureSheet.Cells[i + 2, 10] = Ceiling.Comments;
+                    FurnitureSheet.Cells[i + 2, 8] = Furniture.Count;
+                    FurnitureSheet.Cells[i + 2, 9] = Furniture.ID;
+                    FurnitureSheet.Cells[i + 2, 10] = Furniture.Comments;
 
                     i += 1;
                 }
